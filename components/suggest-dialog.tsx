@@ -151,7 +151,6 @@ export function SuggestDialog({
     const notaCalcada = ratings["calcada-piso"] || ratings["calcada-largura"] || 0
     const notaEntrada = ratings["entrada-nivel"] || ratings["entrada-rampa"] || 0
 
-    // Formata as tags selecionadas (ex: "fisica, visual, neuro")
     const recursosFormatados = selected.length > 0 ? selected.join(", ") : "Nenhum"
 
     try {
@@ -165,7 +164,23 @@ export function SuggestDialog({
             comentario: justification,
             destaque_especifico: observations,
             recursos: recursosFormatados,
-            todas_notas: ratings
+
+            // 15 notas em colunas separadas na ordem exata do formulário
+            calcada_largura: ratings["calcada-largura"] || 0,
+            calcada_piso: ratings["calcada-piso"] || 0,
+            calcada_obstaculos: ratings["calcada-obstaculos"] || 0,
+            rebaixamento: ratings["rebaixamento"] || 0,
+            entrada_nivel: ratings["entrada-nivel"] || 0,
+            entrada_rampa: ratings["entrada-rampa"] || 0,
+            porta_largura: ratings["porta-largura"] || 0,
+            corredores: ratings["corredores"] || 0,
+            obstaculos_internos: ratings["obstaculos-internos"] || 0,
+            balcao: ratings["balcao"] || 0,
+            atendimento: ratings["atendimento"] || 0,
+            provador: ratings["provador"] || 0,
+            banheiro: ratings["banheiro"] || 0,
+            autonomia: ratings["autonomia"] || 0,
+            assentos: ratings["assentos"] || 0
           }
         ])
 
