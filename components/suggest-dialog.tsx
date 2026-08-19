@@ -151,6 +151,9 @@ export function SuggestDialog({
     const notaCalcada = ratings["calcada-piso"] || ratings["calcada-largura"] || 0
     const notaEntrada = ratings["entrada-nivel"] || ratings["entrada-rampa"] || 0
 
+    // Formata as tags selecionadas (ex: "fisica, visual, neuro")
+    const recursosFormatados = selected.length > 0 ? selected.join(", ") : "Nenhum"
+
     try {
       const { error } = await supabase
         .from('avaliacoes')
@@ -160,7 +163,9 @@ export function SuggestDialog({
             nota_calcada: notaCalcada,
             nota_entrada: notaEntrada,
             comentario: justification,
-            destaque_especifico: observations
+            destaque_especifico: observations,
+            recursos: recursosFormatados,
+            todas_notas: ratings
           }
         ])
 
