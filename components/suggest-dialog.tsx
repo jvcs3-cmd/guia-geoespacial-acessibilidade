@@ -148,9 +148,6 @@ export function SuggestDialog({
     const placeName = (form.elements.namedItem("place-name") as HTMLInputElement)?.value || "Estabelecimento Sem Nome"
     const observations = (form.elements.namedItem("observations") as HTMLTextAreaElement)?.value || ""
 
-    const notaCalcada = ratings["calcada-piso"] || ratings["calcada-largura"] || 0
-    const notaEntrada = ratings["entrada-nivel"] || ratings["entrada-rampa"] || 0
-
     const recursosFormatados = selected.length > 0 ? selected.join(", ") : "Nenhum"
 
     try {
@@ -159,28 +156,30 @@ export function SuggestDialog({
         .insert([
           {
             nome_loja: placeName,
-            nota_calcada: notaCalcada,
-            nota_entrada: notaEntrada,
             comentario: justification,
             destaque_especifico: observations,
             recursos: recursosFormatados,
 
-            // 15 notas em colunas separadas na ordem exata do formulário
-            calcada_largura: ratings["calcada-largura"] || 0,
-            calcada_piso: ratings["calcada-piso"] || 0,
-            calcada_obstaculos: ratings["calcada-obstaculos"] || 0,
-            rebaixamento: ratings["rebaixamento"] || 0,
-            entrada_nivel: ratings["entrada-nivel"] || 0,
-            entrada_rampa: ratings["entrada-rampa"] || 0,
-            porta_largura: ratings["porta-largura"] || 0,
-            corredores: ratings["corredores"] || 0,
-            obstaculos_internos: ratings["obstaculos-internos"] || 0,
-            balcao: ratings["balcao"] || 0,
-            atendimento: ratings["atendimento"] || 0,
-            provador: ratings["provador"] || 0,
-            banheiro: ratings["banheiro"] || 0,
-            autonomia: ratings["autonomia"] || 0,
-            assentos: ratings["assentos"] || 0
+            // As 15 notas mapeadas diretamente para as colunas do banco
+            calcada_largura: ratings["calcada-largura"] ?? 0,
+            calcada_piso: ratings["calcada-piso"] ?? 0,
+            calcada_obstaculos: ratings["calcada-obstaculos"] ?? 0,
+            rebaixamento: ratings["rebaixamento"] ?? 0,
+            entrada_nivel: ratings["entrada-nivel"] ?? 0,
+            entrada_rampa: ratings["entrada-rampa"] ?? 0,
+            porta_largura: ratings["porta-largura"] ?? 0,
+            corredores: ratings["corredores"] ?? 0,
+            obstaculos_internos: ratings["obstaculos-internos"] ?? 0,
+            balcao: ratings["balcao"] ?? 0,
+            atendimento: ratings["atendimento"] ?? 0,
+            provador: ratings["provador"] ?? 0,
+            banheiro: ratings["banheiro"] ?? 0,
+            autonomia: ratings["autonomia"] ?? 0,
+            assentos: ratings["assentos"] ?? 0,
+
+            // Mantém suporte para resumo geral
+            nota_calcada: ratings["calcada-piso"] || ratings["calcada-largura"] || 0,
+            nota_entrada: ratings["entrada-nivel"] || ratings["entrada-rampa"] || 0
           }
         ])
 
