@@ -339,53 +339,37 @@ export const PLACES: Place[] = [
     lat: -15.8058641,
     lng: -43.3080633,
   },
-
-  // ---------- FALTAM COORDENADAS ----------
-  // Estas lojas estão comentadas para não quebrar o build (lat/lng são obrigatórios).
-  // Preencha lat/lng (e o endereço, se estiver em branco), apague os "//" do bloco e salve.
-
-  // {
-  //   id: "pink-bijoux",
-  //   name: "Pink Bijoux",
-  //   category: "Bijuterias e Acessórios",
-  //   address: "PREENCHER",
-  //   rating: 0.0,
-  //   reviews: 0,
-  //   access: [],
-  //   lat: 0, // PREENCHER
-  //   lng: 0, // PREENCHER
-  // },
-  // {
-  //   id: "amor-e-cor",
-  //   name: "Amor e Cor",
-  //   category: "Cosméticos e Maquiagem",
-  //   address: "PREENCHER",
-  //   rating: 0.0,
-  //   reviews: 0,
-  //   access: [],
-  //   lat: 0, // PREENCHER
-  //   lng: 0, // PREENCHER
-  // },
-  // {
-  //   id: "atualissima-biju",
-  //   name: "Atualíssima Biju",
-  //   category: "Bijuterias e Acessórios",
-  //   address: "PREENCHER",
-  //   rating: 0.0,
-  //   reviews: 0,
-  //   access: [],
-  //   lat: 0, // PREENCHER
-  //   lng: 0, // PREENCHER
-  // },
-  // {
-  //   id: "moda-menor",
-  //   name: "Moda Menor",
-  //   category: "Moda",
-  //   address: "Avenida do Comércio, 213 — Centro",
-  //   rating: 0.0,
-  //   reviews: 0,
-  //   access: [],
-  //   lat: 0, // PREENCHER
-  //   lng: 0, // PREENCHER
-  // },
+  {
+    id: "pink-bijoux",
+    name: "Pink Bijoux",
+    category: "Bijuterias e Acessórios",
+    address: "Avenida do Comércio, 352 - Centro",
+    rating: 0.0,
+    reviews: 0,
+    access: [],
+    lat: -15.804262320637575,
+    lng: -43.30876675155692,
+  },
+  {
+    id: "amor-e-cor",
+    name: "Amor e Cor",
+    category: "Cosméticos e Maquiagem",
+    address: "Av. do Comércio, 331 - Centro",
+    rating: 0.0,
+    reviews: 0,
+    access: [],
+    lat: -15.803900582658851,
+    lng: -43.30865863587886,
+  },
+  {
+    id: "moda-menor",
+    name: "Moda Menor",
+    category: "Moda",
+    address: "Avenida do Comércio, 213 — Centro",
+    rating: 0.0,
+    reviews: 0,
+    access: [],
+    lat: -15.802990759047491,
+    lng: -43.30884022976163,
+  },
 ]
