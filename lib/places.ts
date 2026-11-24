@@ -238,4 +238,16 @@ export const PLACES: Place[] = [
     lat: -15.806368533564228,
     lng: -43.307952814763674,
   },
+  {
+    id: "chiquinho",
+    name: "Chiquinho Sorvetes",
+    category: "Loja de alimentos e lazer",
+    address: "R. Rui Barbosa, 67 - Centro",
+    rating: 0.0,
+    reviews: 0,
+    access: ["fisica", "visual", "neuro"],
+    lat: -15.80110756431864,
+    lng: -43.30867262593983,
+  },
+
 ]
