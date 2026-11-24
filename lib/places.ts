@@ -250,4 +250,142 @@ export const PLACES: Place[] = [
     lng: -43.30867262593983,
   },
 
+  // ---------- Lojas adicionadas (coordenadas do Google Places) ----------
+  {
+    id: "make-10",
+    name: "Make 10",
+    category: "Cosméticos e Maquiagem",
+    address: "Avenida do Comércio, 357 — Centro",
+    rating: 0.0,
+    reviews: 0,
+    access: [],
+    lat: -15.8044061,
+    lng: -43.3085477,
+  },
+  {
+    id: "oboticario",
+    name: "O Boticário",
+    category: "Perfumaria e Cosméticos",
+    address: "Avenida do Comércio, 94 — Centro",
+    rating: 0.0,
+    reviews: 0,
+    access: [],
+    lat: -15.802017,
+    lng: -43.309488,
+  },
+  {
+    id: "warm-moda-feminina",
+    name: "Warm Moda Feminina",
+    category: "Moda Feminina",
+    address: "Praça Rômulo Sales de Azevedo, 86 — Centro",
+    rating: 0.0,
+    reviews: 0,
+    access: [],
+    lat: -15.8005938,
+    lng: -43.3095592,
+  },
+  {
+    id: "diva",
+    name: "Diva Bijuterias",
+    category: "Bijuterias e Acessórios",
+    address: "Avenida do Comércio, 516 — Centro",
+    rating: 0.0,
+    reviews: 0,
+    access: [],
+    lat: -15.8057597,
+    lng: -43.3084059,
+  },
+  {
+    id: "1001-embalagens",
+    name: "1001 Embalagens",
+    category: "Embalagens e Artigos para Festas",
+    address: "Rua Francisco Sá, 110 — Centro",
+    rating: 0.0,
+    reviews: 0,
+    access: [],
+    lat: -15.8002419,
+    lng: -43.3086672,
+  },
+  {
+    id: "hora-do-lanche",
+    name: "Hora do Lanche",
+    category: "Alimentação",
+    address: "Centro, Janaúba — MG",
+    rating: 0.0,
+    reviews: 0,
+    access: [],
+    lat: -15.8038679,
+    lng: -43.3088539,
+  },
+  {
+    id: "blitz-moda",
+    name: "Blitz Moda",
+    category: "Moda",
+    address: "Avenida do Comércio, 244 — Centro",
+    rating: 0.0,
+    reviews: 0,
+    access: [],
+    lat: -15.8033836,
+    lng: -43.3090031,
+  },
+  {
+    id: "mega-25",
+    name: "Mega 25",
+    category: "Variedades",
+    address: "Avenida do Comércio, 541 — Centro",
+    rating: 0.0,
+    reviews: 0,
+    access: [],
+    lat: -15.8058641,
+    lng: -43.3080633,
+  },
+
+  // ---------- FALTAM COORDENADAS ----------
+  // Estas lojas estão comentadas para não quebrar o build (lat/lng são obrigatórios).
+  // Preencha lat/lng (e o endereço, se estiver em branco), apague os "//" do bloco e salve.
+
+  // {
+  //   id: "pink-bijoux",
+  //   name: "Pink Bijoux",
+  //   category: "Bijuterias e Acessórios",
+  //   address: "PREENCHER",
+  //   rating: 0.0,
+  //   reviews: 0,
+  //   access: [],
+  //   lat: 0, // PREENCHER
+  //   lng: 0, // PREENCHER
+  // },
+  // {
+  //   id: "amor-e-cor",
+  //   name: "Amor e Cor",
+  //   category: "Cosméticos e Maquiagem",
+  //   address: "PREENCHER",
+  //   rating: 0.0,
+  //   reviews: 0,
+  //   access: [],
+  //   lat: 0, // PREENCHER
+  //   lng: 0, // PREENCHER
+  // },
+  // {
+  //   id: "atualissima-biju",
+  //   name: "Atualíssima Biju",
+  //   category: "Bijuterias e Acessórios",
+  //   address: "PREENCHER",
+  //   rating: 0.0,
+  //   reviews: 0,
+  //   access: [],
+  //   lat: 0, // PREENCHER
+  //   lng: 0, // PREENCHER
+  // },
+  // {
+  //   id: "moda-menor",
+  //   name: "Moda Menor",
+  //   category: "Moda",
+  //   address: "Avenida do Comércio, 213 — Centro",
+  //   rating: 0.0,
+  //   reviews: 0,
+  //   access: [],
+  //   lat: 0, // PREENCHER
+  //   lng: 0, // PREENCHER
+  // },
 ]
